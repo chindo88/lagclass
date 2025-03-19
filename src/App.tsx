@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
+import { IonApp, IonContent, IonFooter, IonHeader, IonRouterOutlet, IonTabBar, IonTitle, IonToolbar, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -20,7 +20,7 @@ import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
 /**
- * Ionic Dark Mode
+ * Ionic dark Mode
  * -----------------------------------------------------
  * For more info, please see:
  * https://ionicframework.com/docs/theming/dark-mode
@@ -37,16 +37,22 @@ setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <IonHeader>
+      <IonToolbar color="primary">
+        <IonTitle>
+          Wellcome, Chindo Zainab Abubakar
+        </IonTitle>
+      </IonToolbar>
+    </IonHeader>
+    <IonContent className="custom-content">
+      <h1 style={{textAlign:"center", paddingTop: "50px",}}>Welcome To Bootcamp</h1>
+    </IonContent>
+    <IonFooter>
+      <IonToolbar>
+        <IonTitle className="footer-title">   Day 1 Assignment
+        </IonTitle>
+      </IonToolbar>
+    </IonFooter>
   </IonApp>
 );
 

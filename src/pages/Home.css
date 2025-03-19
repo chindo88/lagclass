@@ -1,0 +1,20 @@
+.custom-content {
+  --background: #ffe5e5; /* Light pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+  
