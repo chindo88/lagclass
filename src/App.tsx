@@ -32,7 +32,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-
+import './pages/Home.css';
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -44,7 +44,8 @@ const App: React.FC = () => (
         </IonTitle>
       </IonToolbar>
     </IonHeader>
-    <IonContent className="custom-content">
+    <IonContent className="custom-content"> 
+      
       <h1 style={{textAlign:"center", paddingTop: "50px",}}>Welcome To Bootcamp</h1>
     </IonContent>
     <IonFooter>
